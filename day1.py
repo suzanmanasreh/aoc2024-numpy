@@ -17,10 +17,7 @@ print(res)
 
 unique = np.unique(col1)
 
-reshaped = col2[:, np.newaxis]
-print(reshaped)
-
-sumit = np.sum(col2[:, None] == unique, axis=0)
+sumit = np.sum(col2[:, np.newaxis] == unique, axis=0)
 
 # part 2 result
 res2 = np.sum(sumit * unique)
